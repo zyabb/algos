@@ -1,0 +1,23 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Reverse Substrings Between Each Pair of Parentheses.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyabb/algos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyabb/algos/issues"
+  },
+  "homepage": "https://github.com/zyabb/algos#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
