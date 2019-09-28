@@ -22,6 +22,4 @@ const reverseParentheses = s => {
   return stack.join('');
 };
 
-console.log(reverseParentheses('a(bcdefghijkl(mno)p)q'));
-
 module.exports = reverseParentheses;
