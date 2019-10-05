@@ -1,11 +1,12 @@
+
 const containsNearbyDuplicate = (nums, k) =>  {
+    let seen = {};
     for (let i = 0; i < nums.length; i++) {
-        let until = i + k;
-        for (let j = i + 1; j <= until; j++) {
-            if (nums[i] === nums[j]) {
-                return true;
-            };
-        };
+       if (nums[i] in seen && k >= i - seen[nums[i]]) {
+            return true;
+       } else {
+           seen[nums[i]] = i;
+       }
     };
     return false;
 };
