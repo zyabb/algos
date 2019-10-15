@@ -1,0 +1,15 @@
+var isMonotonic = function(A) {
+  return incr(A) || decr(A);
+};
+
+const incr = A => {
+  for (let i = 0; i < A.length - 1; i++) if (A[i] > A[i + 1]) return false;
+  return true;
+};
+
+const decr = A => {
+  for (let i = 0; i < A.length - 1; i++) if (A[i] < A[i + 1]) return false;
+  return true;
+};
+
+module.exports = isMonotonic;
