@@ -10,7 +10,7 @@ const findErrorNums = nums => {
       miss = nums[index - 1] + 1;
     }
   }
-  return [dup, nums[nums.length - 1] != nums.length ? nums.length : miss];
+  return [dup, nums[nums.length - 1] !== nums.length ? nums.length : miss];
 };
 
 module.exports = findErrorNums;
