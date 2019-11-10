@@ -1,6 +1,4 @@
-import { Module } from 'module';
-
-var isIsomorphic = function(s, t) {
+const isIsomorphic = function(s, t) {
   if (s.length !== t.length) return false;
   let S = s.split('');
   let T = t.split('');
@@ -20,10 +18,3 @@ var isIsomorphic = function(s, t) {
 };
 
 module.exports = isIsomorphic;
-
-console.log(isIsomorphic('paper', 'title')); //true
-console.log(isIsomorphic('egg', 'odd')); //true
-console.log(isIsomorphic('13', '42')); //true
-console.log(isIsomorphic('1', '2')); //true
-console.log(isIsomorphic('foo', 'bar')); //true
-console.log(isIsomorphic('aaa', 'bbb')); //true
